@@ -8,7 +8,7 @@ public class LayserPointer : MonoBehaviour
     private RaycastHit collidedObject;
     public float raycastDistance = 100f;
     public OVRCameraRig cameraRig;
-    public Vector3 newCameraPosition = new Vector3(-2.732942f, 15.56498f, -5.431501f);
+    public Vector3 newCameraPosition = new Vector3(24.16f, 69.41f, 73.69f);
     public GameObject image_Picture;
     public float imageDuration = 6f;
     public float delayDuration = 3f; // 이미지가 나타나기 전의 대기 시간
