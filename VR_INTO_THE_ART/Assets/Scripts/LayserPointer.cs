@@ -16,6 +16,7 @@ public class LayserPointer : MonoBehaviour
     public GameObject fallOutObject; // 첫 번째 FallOut 오브젝트 참조
     public GameObject fallOutObject2; // 두 번째 FallOut 오브젝트 참조
     public GameObject fallOutObject3;
+    public GameObject fallOutObject4;
 
     public AudioClip fallingSound; // 돌 무너지는 소리 오디오 클립
     private AudioSource audioSource; // 오디오 소스 컴포넌트
@@ -80,7 +81,7 @@ public class LayserPointer : MonoBehaviour
     private IEnumerator MoveCameraAndShowImages()
     {
         // 카메라를 새로운 위치로 이동
-        cameraRig.transform.position = newCameraPosition;
+       // cameraRig.transform.position = newCameraPosition;
 
         // delayDuration 초 대기 후 이미지를 표시
         yield return new WaitForSeconds(delayDuration);
@@ -102,6 +103,8 @@ public class LayserPointer : MonoBehaviour
         DropObject(fallOutObject2);
 
         DropObject(fallOutObject3);
+
+        DropObject(fallOutObject4);
 
     }
 
